@@ -7,10 +7,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.content.startsWith("!help")) {
-    var authorr = (`@${message.author.id}`);
-    message.author.send("hello there");
-    message.channel.send(`<${authorr}>, sent!`);
+  if (message.content === ("help") {
+    message.channel.send("helps");
   }
   
 });
